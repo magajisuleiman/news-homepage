@@ -1,0 +1,227 @@
+/* @font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Inter-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Inter-ExtraBold.woff2') format('woff2');
+  font-display: swap;
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800;900&family=Poppins:wght@300;400;500;600&family=Raleway:wght@100;200;300;500;700&display=swap');
+
+/* navingation styles */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 30px;
+}
+
+/* main style */
+
+main{
+  display: flex;
+  flex-direction: column;
+
+}
+
+main img{
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+.main-content h1{
+  max-inline-size: 12ch;
+  line-height: 1.2;
+  margin-block: 1rem;
+  font-weight: bolder;
+  
+}
+
+.main-content p{
+  font-size: 1.2rem;
+  color: grey
+}
+
+main button{
+  color: white;
+  height: 50px;
+  width: 200px;
+  background-color: #f15d51;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  border: 2px solid #00001a;
+  padding-inline: 20px;
+  margin-block: 1.4rem;
+}
+
+main button:hover{
+  background-color: #00001a;
+  color: white;
+  transition: background-color 0.5ms ease-in-out 0.2ms, color 0.5ms ease-in-out 0.2ms;
+}
+
+/* style for aside section */
+
+aside{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  background-color: #00001a;
+  margin-block: 1.5rem;
+}
+
+aside h1{
+  color: #e3ac63;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-block-start: 20px;
+}
+
+.news-text{
+  margin-block: 30px;
+}
+
+.news-text h2 a{
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.news-text p{
+  color: grey;
+  font-size: 0.8rem;
+}
+
+/* styles for news-pane session */
+.news-pane{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.news-block{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.img-container img{
+  inline-size: 6ch;
+  block-size: auto;
+  object-fit: cover;
+}
+
+.news-content-container{
+  max-inline-size: 25ch;
+}
+
+.news-content-container h1{
+  color: grey;
+  font-size: 1rem;
+}
+
+.news-content-container h2{
+  font-size: 0.8rem;
+  margin-block-end: 5px;
+}
+
+.news-content-container p{
+  font-size: 0.8rem;
+  color: grey;
+}
+
+
+
+@media screen and (min-width: 426px){
+  .main-content{
+    display: flex;
+    margin-block-start: 30px;
+  
+  }
+
+  .action-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline-start: 3rem;
+    max-inline-size: ch;
+  }
+  
+  .main-content p{
+    font-size: 1rem;
+  }
+
+  .main-content h1{
+    font-size: 3rem;
+    min-inline-size: 8ch;
+    font-weight:900;
+    margin-block: 0px;
+  }
+  
+  .main-content button{
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #00001a;
+    max-inline-size: 30ch;
+    max-block-size: 100%;
+    margin-block: 0px;
+  }
+
+  aside h1{
+   font-size: 2rem;
+  }
+
+  .news-text h2 a{
+    font-size: 1rem;
+  }
+
+  .news-text p{
+    font-size: 0.8rem;
+  }
+
+  .news-pane{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block-start: 7rem;
+
+  }
+  .news-block{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .img-container img{
+    inline-size: 7ch;
+    block-size: 100%;
+  }
+
+  .news-content-container{
+    max-inline-size: 19ch;
+  }
+
+  .news-content-container h1{
+    font-size: 1.5rem;
+  }
+  
+  .news-content-container h2{
+    font-size: 1rem;
+    margin-block-end: 5px;
+  }
+  
+  .news-content-container p{
+    font-size: 0.8rem;
+  }
+  
+}
