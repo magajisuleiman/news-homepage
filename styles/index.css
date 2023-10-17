@@ -146,7 +146,7 @@ aside h1{
     flex-direction: column;
     justify-content: space-between;
     margin-inline-start: 3rem;
-    max-inline-size: ch;
+    max-inline-size: 80ch;
   }
   
   .main-content p{
