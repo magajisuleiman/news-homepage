@@ -16,6 +16,10 @@ nav{
   margin-block: 30px;
 }
 
+nav ul{
+  display: none;
+}
+
 /* main style */
 
 main{
@@ -135,6 +139,33 @@ aside h1{
 
 
 @media screen and (min-width: 426px){
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  nav ul li a{
+   color: grey;
+   font-size: 1rem;
+   font-weight: 800;
+  }
+
+  nav ul li a:hover{
+    color: #e3ac63;
+  
+   }
+
+  nav svg:last-child{
+    display: none;
+  }
+  
+  nav ul a{ 
+   text-decoration: none;
+   font-size: 2rem;
+  }
+
   .main-content{
     display: flex;
     margin-block-start: 30px;
