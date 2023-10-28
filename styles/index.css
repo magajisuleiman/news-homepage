@@ -199,6 +199,10 @@ aside h1{
 
 
 @media screen and (min-width: 375px){
+
+  .mobile-nav-toggle{
+    display: none;
+  }
  
   .main-content{
     display: flex;
