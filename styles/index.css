@@ -38,7 +38,7 @@ header{
   }
 
   .mobile-nav-toggle[aria-expanded="true"]{
-    background-image: url(/img/icon-menu-close.svg);
+    background-image: url(../img/icon-menu-close.svg);
   }
 
   .primary-nav[ data-visible = "true" ]{
@@ -51,7 +51,7 @@ header{
 
   .mobile-nav-toggle{
     position: absolute;
-    background: url(/img/icon-menu.svg);
+    background: url(../img/icon-menu.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
